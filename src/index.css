@@ -1,0 +1,172 @@
+/* Manrope*/
+
+:root {
+  --background-image: linear-gradient(120deg, rgba(2, 99, 81, 0.9), rgba(10, 139, 107, 0.67));
+  --background-overlay: rgba(0,0,0,0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+a{
+  font-family: inherit;
+  text-decoration: none;
+  color: #fff;
+}
+
+.homepage {
+  background: url("./1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.homepage .overlay {
+  background-image: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.homepage .overlay h1{
+  text-transform: uppercase;
+  font-size: 80px;
+}
+.homepage .overlay p {
+  font-size: 35px;
+}
+
+ 
+.homepage .overlay ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:  30px;
+}
+
+.homepage .overlay ul li{
+  margin: 0 20px;
+}
+
+.homepage .overlay ul li a{
+  font-size: 46px;
+}
+
+.homepage .overlay ul li a:hover{
+  color: rgb(84, 196, 149);
+}
+
+@media (max-width: 992px){
+.homepage .overlay h1{
+  font-size: 60px;
+}
+}
+
+@media (max-width: 500px){
+  .homepage .overlay h1{
+    font-size: 48px;
+  }
+  }
+
+.contacts{
+  background: url("./1.jpg");
+  background-image: var(--background-image);
+  background-color: var(--background-overlay);
+
+}
+.contacts ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+img.photo {
+  border-radius: 50%;
+  width: 300px;
+
+ 
+}
+
+
+img.logo {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.header {
+  position: absolute;
+  right: 0;
+  height:0;
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.header.open{
+  height: 100vh;
+  background-color: var(--background-overlay);
+}
+
+
+.header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height:  100vh;
+}
+
+.header nav ul li {
+  margin: 20px;
+  
+  font-size: 25px;
+}
+
+.header nav ul li a:hover{
+  color: rgb(84, 196, 149);
+}
+
+
+.menu-btn {
+  position: absolute;
+  right: 125px;
+  margin-top: 70px;
+  z-index: 9999;
+}
+
+.menu-btn button {
+  background-color: transparent;
+  font-size: 70px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
